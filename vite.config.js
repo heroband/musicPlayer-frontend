@@ -18,4 +18,14 @@ export default defineConfig(async () => ({
       ignored: ["**/src-tauri/**"],
     },
   },
+
+  resolve: {
+    alias: {
+        src: '/src',
+        assets: '/src/assets',
+        components: '/src/components',
+        styles: '/src/styles',
+    },
+  },
+
 }));
